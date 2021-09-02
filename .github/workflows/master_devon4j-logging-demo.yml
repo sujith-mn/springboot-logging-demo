@@ -50,4 +50,4 @@ jobs:
         app-name: 'devon4j-logging-demo'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_c9ec9a8698aa4c15bf02418ad71d0b70 }}
-        package: '*.war'
+        package: 'example-logging-server-bootified.war'
