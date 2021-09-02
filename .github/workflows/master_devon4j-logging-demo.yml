@@ -27,8 +27,8 @@ jobs:
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v2
       with:
-        name: java-app
-        path: '${{ github.workspace }}/target/*.war'
+        name: example-logging
+        path: '${{ github.workspace }}/server/target/*.war'
 
   deploy:
     runs-on: ubuntu-latest
