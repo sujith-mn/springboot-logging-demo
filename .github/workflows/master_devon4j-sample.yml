@@ -47,7 +47,7 @@ jobs:
       id: deploy-to-webapp
       uses: azure/webapps-deploy@v2
       with:
-        app-name: 'example-logging'
+        app-name: 'devon4j-logging-demo'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_c9ec9a8698aa4c15bf02418ad71d0b70 }}
         package: 'example-logging-server-bootified.war'
