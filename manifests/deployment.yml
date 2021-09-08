@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "test-f77a"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "test-f77a"
+  template:
+    metadata:
+      labels:
+        app: "test-f77a"
+    spec:
+      containers:
+        - name: "test-f77a"
+          image: "devonfw.azurecr.io/test"
+          ports:
+          - containerPort: 8081
